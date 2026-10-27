@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 1. Getting Started with jQuery | jQuery Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" id="bgFx"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery &middot; Assignment 6</a>
+    <button class="menu-toggle" type="button" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Part 1. Getting Started with jQuery</h1>
+      <p class="sub">Setup, Selectors &amp; CSS</p>
+      <div class="student">
+        <span>Student: Bazarkul Balnur</span>
+        <span>Group: SE-2529</span>
+      </div>
+    </section>
+
+    <section class="card" id="task0">
+      <h2><span class="tag">Task 0</span>Setup</h2>
+      <p class="desc">jQuery is included from a CDN and the <strong>$(document).ready()</strong> function runs when the page is loaded. The message is printed to the console.</p>
+      <span class="status" id="readyStatus">Waiting for jQuery...</span>
+    </section>
+
+    <section class="card" id="task1">
+      <h2><span class="tag">Task 1</span>Selectors &amp; CSS</h2>
+      <p class="desc">Elements are selected by ID, class and tag. Their content is changed with .text() and .html(), and styles are changed with .css().</p>
+
+      <div class="demo-box" id="demoArea">
+        <h3 id="mainTitle">I am selected by ID</h3>
+        <p class="demo-text">I am a paragraph selected by class.</p>
+        <p class="demo-text">I have the same class too.</p>
+        <ul>
+          <li>List item one (tag li)</li>
+          <li>List item two (tag li)</li>
+          <li>List item three (tag li)</li>
+        </ul>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn" id="btnId" type="button">By ID: .text()</button>
+        <button class="btn" id="btnClass" type="button">By class: .html()</button>
+        <button class="btn" id="btnTag" type="button">By tag: .css()</button>
+        <button class="btn alt" id="btnReset" type="button">Reset</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Bazarkul Balnur &middot; SE-2529 &middot; Assignment #6 &middot; jQuery</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/part1.js"></script>
+</body>
+</html>

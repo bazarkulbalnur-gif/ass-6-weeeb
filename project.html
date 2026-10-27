@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 5. Mini Project | jQuery Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" id="bgFx"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery &middot; Assignment 6</a>
+    <button class="menu-toggle" type="button" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html" class="active">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Part 5. Mini Project</h1>
+      <p class="sub">Task 11. Bouncing Ball</p>
+      <div class="student">
+        <span>Student: Bazarkul Balnur</span>
+        <span>Group: SE-2529</span>
+      </div>
+    </section>
+
+    <section class="card" id="task11">
+      <h2><span class="tag">Task 11</span>Bouncing Ball</h2>
+      <p class="desc">A ball moves across the screen and bounces back from the walls and the ground.</p>
+      <div class="stage tall" id="ballStage">
+        <div class="ball-x" id="ballX"><div class="ball" id="ball"></div></div>
+        <div class="ground"></div>
+      </div>
+      <div class="controls">
+        <button class="btn" id="btnStart" type="button">Start</button>
+        <button class="btn warn" id="btnStop" type="button">Stop</button>
+        <button class="btn alt" id="btnResetBall" type="button">Reset</button>
+        <label for="speedRange">Speed</label>
+        <input type="range" id="speedRange" min="1" max="5" value="2">
+        <span class="counter" id="bounceCounter">Bounces: 0</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Bazarkul Balnur &middot; SE-2529 &middot; Assignment #6 &middot; jQuery</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3. DOM Manipulation with jQuery | jQuery Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" id="bgFx"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery &middot; Assignment 6</a>
+    <button class="menu-toggle" type="button" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html" class="active">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Part 3. DOM Manipulation with jQuery</h1>
+      <p class="sub">Add &amp; Remove, Attributes, Forms</p>
+      <div class="student">
+        <span>Student: Bazarkul Balnur</span>
+        <span>Group: SE-2529</span>
+      </div>
+    </section>
+
+    <section class="card" id="task5">
+      <h2><span class="tag">Task 5</span>Add &amp; Remove Elements</h2>
+      <p class="desc">Use .append(), .prepend() and .remove() to manage the list.</p>
+      <ul class="item-list" id="itemList">
+        <li><span>Item 1</span><button class="del" type="button" aria-label="Delete">&times;</button></li>
+        <li><span>Item 2</span><button class="del" type="button" aria-label="Delete">&times;</button></li>
+        <li><span>Item 3</span><button class="del" type="button" aria-label="Delete">&times;</button></li>
+      </ul>
+      <p class="note" id="listNote"></p>
+      <div class="btn-row">
+        <button class="btn" id="btnAdd" type="button">Add Item</button>
+        <button class="btn" id="btnPrepend" type="button">Add Item to Top</button>
+        <button class="btn warn" id="btnRemove" type="button">Remove Item</button>
+      </div>
+    </section>
+
+    <section class="card" id="task6">
+      <h2><span class="tag">Task 6</span>Modifying Attributes</h2>
+      <p class="desc">Buttons change the src attribute of an image and the href attribute of a link.</p>
+      <img class="preview-img" id="swapImg" src="images/scene1.svg" alt="Scene">
+      <div class="btn-row">
+        <button class="btn" id="btnSrc" type="button">Change Image src</button>
+      </div>
+      <div class="demo-box link-box">
+        <p>Link: <a id="dynLink" href="https://jquery.com" target="_blank" rel="noopener">jQuery official website</a></p>
+        <p>Current href: <code id="hrefText">https://jquery.com</code></p>
+      </div>
+      <div class="btn-row">
+        <button class="btn alt" id="btnHref" type="button">Change Link href</button>
+      </div>
+    </section>
+
+    <section class="card" id="task7">
+      <h2><span class="tag">Task 7</span>Form Interaction</h2>
+      <p class="desc">Type in the fields and your input appears live below the form.</p>
+      <form id="userForm" autocomplete="off">
+        <div class="field">
+          <label for="nameInput">Name</label>
+          <input type="text" id="nameInput" placeholder="Enter your name">
+        </div>
+        <div class="field">
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" placeholder="Enter your email">
+        </div>
+      </form>
+      <div class="live-out">
+        <p><strong>Name:</strong> <span id="outName">...</span></p>
+        <p><strong>Email:</strong> <span id="outEmail">...</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Bazarkul Balnur &middot; SE-2529 &middot; Assignment #6 &middot; jQuery</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/dom.js"></script>
+</body>
+</html>

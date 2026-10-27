@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2. jQuery Effects | jQuery Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" id="bgFx"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery &middot; Assignment 6</a>
+    <button class="menu-toggle" type="button" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html" class="active">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Part 2. jQuery Effects</h1>
+      <p class="sub">Visibility, Fade and Slide methods</p>
+      <div class="student">
+        <span>Student: Bazarkul Balnur</span>
+        <span>Group: SE-2529</span>
+      </div>
+    </section>
+
+    <section class="card" id="task2">
+      <h2><span class="tag">Task 2</span>Visibility Methods</h2>
+      <p class="desc">Use .hide(), .show() and .toggle() to control the paragraph.</p>
+      <div class="demo-box">
+        <p id="textPara">Hello! I am a paragraph. jQuery can hide me, show me again, or toggle my visibility with a smooth effect.</p>
+      </div>
+      <div class="btn-row">
+        <button class="btn" id="btnHide" type="button">Hide</button>
+        <button class="btn" id="btnShow" type="button">Show</button>
+        <button class="btn alt" id="btnToggle" type="button">Toggle</button>
+      </div>
+    </section>
+
+    <section class="card" id="task3">
+      <h2><span class="tag">Task 3</span>Fade Methods</h2>
+      <p class="desc">Use .fadeIn(), .fadeOut() and .fadeToggle() on the image.</p>
+      <img class="preview-img" id="fadeImg" src="images/scene1.svg" alt="Sunny meadow with flowers">
+      <div class="btn-row">
+        <button class="btn" id="btnFadeIn" type="button">Fade In</button>
+        <button class="btn" id="btnFadeOut" type="button">Fade Out</button>
+        <button class="btn alt" id="btnFadeToggle" type="button">Fade Toggle</button>
+      </div>
+    </section>
+
+    <section class="card" id="task4">
+      <h2><span class="tag">Task 4</span>Slide Methods</h2>
+      <p class="desc">A collapsible panel controlled by .slideUp(), .slideDown() and .slideToggle().</p>
+      <div class="panel-head">Collapsible panel</div>
+      <div class="panel-body" id="panelBody">
+        <p>This is the content of the collapsible panel. It slides up and down smoothly when you press the buttons below.</p>
+      </div>
+      <div class="btn-row">
+        <button class="btn" id="btnSlideUp" type="button">Slide Up</button>
+        <button class="btn" id="btnSlideDown" type="button">Slide Down</button>
+        <button class="btn alt" id="btnSlideToggle" type="button">Slide Toggle</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Bazarkul Balnur &middot; SE-2529 &middot; Assignment #6 &middot; jQuery</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 4. Animations | jQuery Assignment 6</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fx" id="bgFx"></div>
+
+  <header class="navbar">
+    <a class="brand" href="index.html">jQuery &middot; Assignment 6</a>
+    <button class="menu-toggle" type="button" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links">
+      <a href="index.html">Part 1: Basics</a>
+      <a href="effects.html">Part 2: Effects</a>
+      <a href="dom.html">Part 3: DOM</a>
+      <a href="animations.html" class="active">Part 4: Animations</a>
+      <a href="project.html">Part 5: Mini Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Part 4. Animations</h1>
+      <p class="sub">Basic, Sequential and Combined animations with .animate()</p>
+      <div class="student">
+        <span>Student: Bazarkul Balnur</span>
+        <span>Group: SE-2529</span>
+      </div>
+    </section>
+
+    <section class="card" id="task8">
+      <h2><span class="tag">Task 8</span>Basic Animation</h2>
+      <p class="desc">The square grows and moves to a new position.</p>
+      <div class="stage" id="stage8"><div class="box" id="box8"></div></div>
+      <div class="btn-row">
+        <button class="btn" id="btnAnim8" type="button">Animate</button>
+        <button class="btn alt" id="btnReset8" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section class="card" id="task9">
+      <h2><span class="tag">Task 9</span>Sequential Animations</h2>
+      <p class="desc">Move right, move down, shrink, then return to the original state.</p>
+      <div class="stage" id="stage9"><div class="box" id="box9"></div></div>
+      <div class="btn-row">
+        <button class="btn" id="btnAnim9" type="button">Start Sequence</button>
+        <button class="btn alt" id="btnReset9" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section class="card" id="task10">
+      <h2><span class="tag">Task 10</span>Combined Animation</h2>
+      <p class="desc">Opacity, size and position change together in a single .animate() call.</p>
+      <div class="stage" id="stage10"><div class="box" id="box10"></div></div>
+      <div class="btn-row">
+        <button class="btn" id="btnAnim10" type="button">Animate</button>
+        <button class="btn alt" id="btnReset10" type="button">Reset</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Bazarkul Balnur &middot; SE-2529 &middot; Assignment #6 &middot; jQuery</span>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
